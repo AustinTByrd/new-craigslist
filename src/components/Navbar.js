@@ -1,6 +1,8 @@
 import React from 'react';
 import {
+    Nav,
     Navbar,
+    NavItem,
     FormGroup,
     FormControl,
     Button
@@ -11,18 +13,17 @@ const NavbarInstance = () => (
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">Brand</a>
+          <a href="#"><b>BRYANS</b>LIST</a>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Navbar.Form pullLeft>
-          <FormGroup>
-            <FormControl type="text" placeholder="Search" />
-          </FormGroup>
-          {' '}
+        <Navbar.Form pullRight>
           <Button type="submit">Submit</Button>
         </Navbar.Form>
+        <Nav pullRight>
+            <NavItem eventKey={1} href="#">My Account</NavItem>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   </div>
