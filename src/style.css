@@ -74,15 +74,3 @@
 .form-wrapper #submit::-moz-focus-inner {
 	border: 0;
 }
-
-.addPostBtn {
-    color:red;
-    padding:10px;
-}
-
-footer {
-    margin-top: 50px;
-    padding-left: 60px;
-    background-color:#eee;
-    height:60px;
-}
