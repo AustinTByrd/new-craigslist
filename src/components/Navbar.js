@@ -1,6 +1,8 @@
 import React from 'react';
 import {
     Navbar,
+    Nav,
+    NavItem,
     FormGroup,
     FormControl,
     Button
@@ -16,13 +18,10 @@ const NavbarInstance = () => (
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Navbar.Form pullLeft>
-          <FormGroup>
-            <FormControl type="text" placeholder="Search" />
-          </FormGroup>
-          {' '}
-          <Button type="submit">Submit</Button>
-        </Navbar.Form>
+        <Nav pullRight>
+            <NavItem eventKey={1} href="#">Link Right</NavItem>
+          <Button className="navBtn" type="submit">Submit</Button>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   </div>
